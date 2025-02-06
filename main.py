@@ -84,8 +84,8 @@ def dashboard(page: ft.Page):
 
     main_col = ft.Column(
         spacing=10,
-        height=page.height - 100,
-        width=page.width - 20,
+        height=page.height,
+        width=page.width,
         scroll=ft.ScrollMode.HIDDEN
     )
 
@@ -110,6 +110,13 @@ def dashboard(page: ft.Page):
 
         if not lessons:
             main_col.controls.append(ft.Text("Сегодня уроков нет, отдыхаем :D", size=24, weight=ft.FontWeight.BOLD))
+
+        main_col.controls.append( # это такой ужас, помогите пофиксить, кто-нибудь, пжпжпж
+            ft.Container(
+                bgcolor=ft.Colors.SURFACE,
+                height=140
+            )
+        )
 
     date_button = ft.ElevatedButton(
         text=day.strftime("%d.%m.%Y"),
