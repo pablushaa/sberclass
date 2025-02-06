@@ -1,0 +1,15 @@
+[tool.flet.android]
+split_per_abi = true
+
+[project]
+name = "sberclass"
+version = "0.1"
+description = ""
+dependencies = [
+    "flet",
+    "requests"
+]
+
+[tool.flet]
+org = "ru.pablusha"
+product = "СберКласс"
