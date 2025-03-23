@@ -3,7 +3,7 @@ split_per_abi = true
 
 [project]
 name = "sberclass"
-version = "0.1"
+version = "1.0"
 description = ""
 dependencies = [
     "flet",
